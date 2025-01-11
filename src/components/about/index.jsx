@@ -11,19 +11,23 @@ const AboutDetails = () => {
             " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
           }
         >
-          <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
-            Architect of Enchantment
+          <h2 className="text-xl md:text-2xl text-left w-full capitalize">
+            Discover the Magic of Programming
           </h2>
-          <p className="font-light  text-xs sm:text-sm md:text-base   ">
-            My journey in web development is powered by an array of mystical
-            tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
-            precision, crafting seamless portals (websites) that connect realms
-            (users) across the digital universe. The ancient arts of the
-            Jamstack empower me to create fast, secure, and dynamic experiences,
-            while my design skills ensure every creation is not only functional
-            but visually captivating. Join me as I continue to explore new
-            spells and technologies to shape the future of the web.
+          <p className="font-light text-xs sm:text-sm md:text-base">
+            Welcome to the world of coding, where creativity meets technology! I
+            work as a software engineer, but in my spare time, I dedicate myself
+            to tutoring because sharing my love for programming brings me so
+            much joy. With over 3 years of experience as a dedicated tutor, I
+            specialize in guiding students of all levels—from middle school to
+            high school and beyond—on their journey to mastering computer
+            science, data science, and software engineering. Whether you're
+            tackling your first programming project or advancing your skills in
+            Java, Python, or C#, my lessons are designed to inspire and empower.
+            I provide private tutoring, group lessons, and mentorship for school
+            projects, offering a supportive environment to help you turn your
+            ideas into reality. Let's explore the exciting possibilities of
+            coding together!
           </p>
         </ItemLayout>
 
@@ -31,7 +35,7 @@ const AboutDetails = () => {
           className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            25+ <sub className="font-semibold text-base">clients</sub>
+            30+ <sub className="font-semibold text-base">students</sub>
           </p>
         </ItemLayout>
 
@@ -39,8 +43,7 @@ const AboutDetails = () => {
           className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            4+{" "}
-            <sub className="font-semibold text-base">years of experience</sub>
+            3+ <sub className="font-semibold text-base">years of tutoring</sub>
           </p>
         </ItemLayout>
 
