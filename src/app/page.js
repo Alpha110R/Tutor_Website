@@ -33,7 +33,7 @@ export default function Home() {
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
           <h2 className="font-bold  text-3xl xs:text-5xl sm:text-6xl  lg:text-7xl text-accent">
-            Coding School
+            Wizards Coding School
           </h2>
         </div>
       </div>
@@ -43,13 +43,13 @@ export default function Home() {
           <div className="w-full flex justify-center items-center py-20">
             <div className="max-w-5xl w-full px-8 flex flex-col items-center">
               <h3 className="text-4xl font-bold text-center text-yellow-500 mb-10">
-                Contact Me
+                Contact Us
               </h3>
               <div className="w-full flex justify-center">
                 <Form />
               </div>
               <h5 className="text-2xl font-bold text-center text-yellow-500 mb-10 mt-10">
-                You Can Call Us: 054-819-2255
+                You Can Call Us: 054-000-0000
               </h5>
             </div>
           </div>
