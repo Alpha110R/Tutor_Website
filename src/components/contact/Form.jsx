@@ -75,7 +75,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "CodeBucks",
+      to_name: "Wizards",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
@@ -93,19 +93,20 @@ export default function Form() {
         animate="show"
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-lg w-full flex flex-col items-center justify-center space-y-6"
+        dir="rtl"
       >
         <motion.input
           variants={item}
           type="text"
-          placeholder="Name"
+          placeholder="שם מלא"
           {...register("name", {
-            required: "This field is required!",
+            required: "שדה זה הוא חובה!",
             minLength: {
               value: 3,
-              message: "Name should be at least 3 characters long.",
+              message: "השם צריך להכיל לפחות 3 תווים.",
             },
           })}
-          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
         />
         {errors.name && (
           <span className="inline-block self-start text-accent">
@@ -115,9 +116,9 @@ export default function Form() {
         <motion.input
           variants={item}
           type="email"
-          placeholder="Email"
-          {...register("email", { required: "This field is required!" })}
-          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg"
+          placeholder="דואר אלקטרוני"
+          {...register("email", { required: "שדה זה הוא חובה!" })}
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
         />
         {errors.email && (
           <span className="inline-block self-start text-accent">
@@ -126,19 +127,18 @@ export default function Form() {
         )}
         <motion.textarea
           variants={item}
-          placeholder="Message"
+          placeholder="הודעה"
           {...register("message", {
-            required: "This field is required!",
             maxLength: {
-              value: 500,
-              message: "Message should be less than 500 characters.",
+              value: 100,
+              message: "ההודעה צריכה להיות קצרה מ-100 תווים.",
             },
             minLength: {
-              value: 50,
-              message: "Message should be more than 50 characters.",
+              value: 5,
+              message: "ההודעה צריכה להכיל יותר מ-5 תווים.",
             },
           })}
-          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
         />
         {errors.message && (
           <span className="inline-block self-start text-accent">
@@ -147,8 +147,8 @@ export default function Form() {
         )}
         <motion.input
           variants={item}
-          value="Cast Your Message!"
-          className="px-12 py-5 text-lg font-semibold rounded-lg shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 cursor-pointer capitalize"
+          value="אשמח לקבוע שיעור"
+          className="px-12 py-5 text-lg font-semibold rounded-lg shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 cursor-pointer capitalize text-right"
           type="submit"
         />
       </motion.form>
