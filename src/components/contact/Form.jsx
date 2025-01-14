@@ -92,20 +92,20 @@ export default function Form() {
         initial="hidden"
         animate="show"
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-md w-full flex flex-col items-center justify-center space-y-4"
+        className="max-w-lg w-full flex flex-col items-center justify-center space-y-6"
       >
         <motion.input
           variants={item}
           type="text"
-          placeholder="name"
+          placeholder="Name"
           {...register("name", {
             required: "This field is required!",
             minLength: {
               value: 3,
-              message: "Name should be atleast 3 characters long.",
+              message: "Name should be at least 3 characters long.",
             },
           })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg"
         />
         {errors.name && (
           <span className="inline-block self-start text-accent">
@@ -115,9 +115,9 @@ export default function Form() {
         <motion.input
           variants={item}
           type="email"
-          placeholder="email"
+          placeholder="Email"
           {...register("email", { required: "This field is required!" })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg"
         />
         {errors.email && (
           <span className="inline-block self-start text-accent">
@@ -126,32 +126,29 @@ export default function Form() {
         )}
         <motion.textarea
           variants={item}
-          placeholder="message"
+          placeholder="Message"
           {...register("message", {
             required: "This field is required!",
             maxLength: {
               value: 500,
-              message: "Message should be less than 500 characters",
+              message: "Message should be less than 500 characters.",
             },
             minLength: {
               value: 50,
-              message: "Message should be more than 50 characters",
+              message: "Message should be more than 50 characters.",
             },
           })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg"
         />
         {errors.message && (
           <span className="inline-block self-start text-accent">
             {errors.message.message}
           </span>
         )}
-
         <motion.input
           variants={item}
-          value="Cast your message!"
-          className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
-      hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
-      "
+          value="Cast Your Message!"
+          className="px-12 py-5 text-lg font-semibold rounded-lg shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 cursor-pointer capitalize"
           type="submit"
         />
       </motion.form>
