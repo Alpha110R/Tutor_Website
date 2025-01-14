@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import FireFliesBackground from "@/components/FireFliesBackground";
-import Sound from "@/components/Sound";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,8 +10,14 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: "Widards Coding School",
-    default: "Widards Coding School",
+    template: "🧙Wizards Coding School",
+    default: "🧙Wizards Coding School",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+    ],
   },
   description:
     "Wizards Coding School – Learn to Code, Cast Your Spells in Tech!",
