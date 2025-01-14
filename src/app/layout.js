@@ -13,12 +13,6 @@ export const metadata = {
     template: "🧙Wizards Coding School",
     default: "🧙Wizards Coding School",
   },
-  icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16" },
-      { url: "/favicon-32x32.png", sizes: "32x32" },
-    ],
-  },
   description:
     "Wizards Coding School – Learn to Code, Cast Your Spells in Tech!",
 };

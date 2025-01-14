@@ -42,7 +42,7 @@ export default function Home() {
           <About />
           <div className="w-full flex justify-center items-center py-20">
             <div className="max-w-5xl w-full px-8 flex flex-col items-center">
-              <h3 className="text-4xl font-bold text-center text-yellow-500 mb-10">
+              <h3 className="text-4xl font-bold text-center text-yellow-300 mb-10">
                 צרו קשר
               </h3>
               <div className="w-full flex justify-center">
