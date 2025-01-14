@@ -24,12 +24,14 @@ export default function Home() {
         alt="Next.js Portfolio website's about page background image"
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-80"
       />
-
-      <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
+      {/* Hat */}
+      <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-5">
         <RenderModel>
           <HatModel />
         </RenderModel>
       </div>
+
+      {/* Title */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
           <h2 className="font-bold  text-3xl xs:text-5xl sm:text-6xl  lg:text-7xl text-accent">
@@ -37,6 +39,7 @@ export default function Home() {
           </h2>
         </div>
       </div>
+
       <div className="flex min-h-screen flex-col items-center justify-between relative">
         <div className="w-full h-screen">
           <About />
