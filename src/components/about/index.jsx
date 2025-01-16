@@ -12,7 +12,7 @@ const AboutDetails = () => {
           `}
         >
           <h2 className="text-3xl md:text-4xl text-right w-full capitalize font-bold mb-4 text-yellow-300">
-            בואו לתכנת ולהכיר את עולם ה- AI
+            בואו ללמוד לתכנת ולהכיר את עולם ה- AI
           </h2>
           <div className="font-light text-[1.3rem] text-right leading-relaxed text-white">
             רוצים ללמוד תכנות ולהכיר את עולם הבינה המלאכותית? הגעתם למקום הנכון!
@@ -31,7 +31,7 @@ const AboutDetails = () => {
               <br />
               💻 OOP
               <br />
-              🤖 בינה מלאכותית
+              🤖 בינה מלאכותית (AI)
               <br />
               💡 חשיבה תכנותית
               <br />
@@ -62,17 +62,27 @@ const AboutDetails = () => {
         <div className="col-span-full lg:col-span-4 flex flex-wrap items-center justify-center gap-4">
           <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
             <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              50+ <sub className="text-[1.1rem]">שיעורים מותאמים אישית</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
               30+ <sub className="text-[1.1rem]">תלמידים</sub>
             </p>
           </ItemLayout>
           <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
             <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              10+ <sub className="text-[1.1rem]">טכנולוגיות נלמדות</sub>
+              10+ <sub className="text-[1.1rem]">טכנולוגיות</sub>
             </p>
           </ItemLayout>
           <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
             <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              3+ <sub className="text-[1.1rem]">פרויקטי לימוד</sub>
+              5+ <sub className="text-[1.1rem]">פרויקטי לימוד</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              3+ <sub className="text-[1.1rem]">שפות תכנות</sub>
             </p>
           </ItemLayout>
         </div>

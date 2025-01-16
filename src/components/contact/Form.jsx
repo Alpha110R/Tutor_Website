@@ -47,7 +47,7 @@ export default function Form() {
       )
       .then(
         () => {
-          toast.success("קבלנו את ההודעה שלכם, נחזור אליכם בקרוב!", {
+          toast.success("קבלנו את ההודעה שלכם, נחזור אליכם בהקדם!", {
             id: toastId,
             style: { direction: "rtl", textAlign: "right" },
           });
@@ -64,7 +64,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "Wizard Alon",
+      to_name: "Mage",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
