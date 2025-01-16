@@ -6,6 +6,7 @@ const AboutDetails = () => {
     <section className="py-20 w-full" dir="rtl">
       <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
         <ItemLayout
+          enableAnimation={false}
           className={`
             col-span-full lg:col-span-8 row-span-2 flex-col items-start border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4
           `}
@@ -16,9 +17,9 @@ const AboutDetails = () => {
           <div className="font-light text-[1.3rem] text-right leading-relaxed text-white">
             רוצים ללמוד תכנות ולהכיר את עולם הבינה המלאכותית? הגעתם למקום הנכון!
             <br />
-            אנחנו כאן כדי לעזור לכם להתמקצע, להעמיק ולהצליח. בין אם אתם תלמידי
-            יסודי, חטיבה, תיכון או סטודנטים – אנחנו מציעים שיעורים פרטיים
-            וקבוצתיים במגוון נושאים מרתקים, הכוללים:
+            אנחנו כאן כדי לעזור לכם להתמקצע, להעמיק ולהצליח. בין אם אתם{" "}
+            <u>תלמידי יסודי, חטיבה, תיכון או סטודנטים</u> – אנחנו מציעים שיעורים
+            פרטיים וקבוצתיים במגוון נושאים מרתקים, הכוללים:
             <br />
             <br />
             <div className="text-center">
