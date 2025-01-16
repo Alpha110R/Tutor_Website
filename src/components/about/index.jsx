@@ -10,15 +10,15 @@ const AboutDetails = () => {
             col-span-full lg:col-span-8 row-span-2 flex-col items-start border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4
           `}
         >
-          <h2 className="text-3xl md:text-4xl text-right w-full capitalize font-bold mb-4 text-yellow-500">
+          <h2 className="text-3xl md:text-4xl text-right w-full capitalize font-bold mb-4 text-yellow-300">
             בואו לתכנת ולהכיר את עולם ה- AI
           </h2>
           <div className="font-light text-[1.3rem] text-right leading-relaxed text-white">
             רוצים ללמוד תכנות ולהכיר את עולם הבינה המלאכותית? הגעתם למקום הנכון!
             <br />
             אנחנו כאן כדי לעזור לכם להתמקצע, להעמיק ולהצליח. בין אם אתם תלמידי
-            חטיבה, תיכון או סטודנטים – אנחנו מציעים שיעורים פרטיים וקבוצתיים
-            במגוון נושאים מרתקים, הכוללים:
+            יסודי, חטיבה, תיכון או סטודנטים – אנחנו מציעים שיעורים פרטיים
+            וקבוצתיים במגוון נושאים מרתקים, הכוללים:
             <br />
             <br />
             <div className="text-center">
@@ -28,10 +28,18 @@ const AboutDetails = () => {
               <br />
               💻 #C
               <br />
+              💻 OOP
+              <br />
               🤖 בינה מלאכותית
               <br />
-              🤖 חשיבה תכנותית
+              💡 חשיבה תכנותית
+              <br />
+              💡 חשיבה יצירתית
             </div>
+            <br />
+            אנחנו מתאימים את השיעורים שלנו לרמות ולגילאים השונים, כך שכל תלמיד
+            יקבל חוויית למידה ברמה הגבוהה ביותר.
+            <br />
             <br />
             אז מי אנחנו?
             <br />
@@ -52,13 +60,18 @@ const AboutDetails = () => {
 
         <div className="col-span-full lg:col-span-4 flex flex-wrap items-center justify-center gap-4">
           <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-500">
-              30+ <sub className="text-[1rem]">תלמידים</sub>
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              30+ <sub className="text-[1.1rem]">תלמידים</sub>
             </p>
           </ItemLayout>
           <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-500">
-              3+ <sub className="text-[1rem]">שנות הדרכה</sub>
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              10+ <sub className="text-[1.1rem]">טכנולוגיות נלמדות</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              3+ <sub className="text-[1.1rem]">פרויקטי לימוד</sub>
             </p>
           </ItemLayout>
         </div>

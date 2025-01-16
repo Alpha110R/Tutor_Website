@@ -31,7 +31,7 @@ export default function Home() {
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
-          <h2 className="font-bold  text-3xl xs:text-5xl sm:text-6xl  lg:text-7xl text-accent">
+          <h2 className="font-bold text-3xl xs:text-5xl sm:text-6xl lg:text-7xl text-accent">
             Wizards Coding School
           </h2>
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
               <div className="w-full flex justify-center">
                 <Form />
               </div>
-              <h5 className="text-2xl font-bold text-center text-yellow-500 mt-10">
+              <h5 className="text-2xl font-bold text-center text-yellow-300 mt-10">
                 יכולים גם להתקשר: 0540000000
               </h5>
             </div>
