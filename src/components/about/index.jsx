@@ -1,103 +1,122 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
-import Link from "next/link";
 
 const AboutDetails = () => {
   return (
-    <section className="py-20 w-full">
-      <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
+    <section className="py-20 w-full" dir="rtl">
+      <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
         <ItemLayout
-          className={
-            " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
-          }
+          enableAnimation={false}
+          className={`
+            col-span-full lg:col-span-8 row-span-2 flex-col items-start border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4
+          `}
         >
-          <h2 className="text-xl md:text-2xl text-left w-full capitalize">
-            Discover the Magic of Programming
+          <h2 className="text-3xl md:text-4xl text-right w-full capitalize font-bold mb-4 text-yellow-300">
+            בואו ללמוד לתכנת ולהכיר את עולם ה- AI
           </h2>
-          <p className="font-light text-xs sm:text-sm md:text-base">
-            Welcome to the world of coding, where creativity meets technology! I
-            work as a software engineer, but in my spare time, I dedicate myself
-            to tutoring because sharing my love for programming brings me so
-            much joy. With over 3 years of experience as a dedicated tutor, I
-            specialize in guiding students of all levels—from middle school to
-            high school and beyond—on their journey to mastering computer
-            science, data science, and software engineering. Whether you're
-            tackling your first programming project or advancing your skills in
-            Java, Python, or C#, my lessons are designed to inspire and empower.
-            I provide private tutoring, group lessons, and mentorship for school
-            projects, offering a supportive environment to help you turn your
-            ideas into reality. Let's explore the exciting possibilities of
-            coding together!
-          </p>
+          <div className="font-light text-[1.3rem] text-right leading-relaxed text-white">
+            רוצים ללמוד תכנות ולהכיר את עולם הבינה המלאכותית? הגעתם למקום הנכון!
+            <br />
+            אנחנו כאן כדי לעזור לכם להתמקצע, להעמיק ולהצליח. בין אם אתם{" "}
+            <u>תלמידי יסודי, חטיבה, תיכון או סטודנטים</u> – אנחנו מציעים שיעורים
+            פרטיים וקבוצתיים במגוון נושאים מרתקים, הכוללים:
+            <br />
+            <br />
+            <div className="text-center">
+              💻 Java
+              <br />
+              💻 Python
+              <br />
+              💻 #C
+              <br />
+              💻 OOP
+              <br />
+              🤖 בינה מלאכותית (AI)
+              <br />
+              💡 חשיבה תכנותית
+              <br />
+              💡 חשיבה יצירתית
+            </div>
+            <br />
+            אנחנו מתאימים את השיעורים שלנו לרמות ולגילאים השונים, כך שכל תלמיד
+            יקבל חוויית למידה ברמה הגבוהה ביותר.
+            <br />
+            <br />
+            אז מי אנחנו?
+            <br />
+            צוות של מהנדסי תוכנה וסטודנטים נלהבים, שמטרתם להנגיש את הידע
+            הטכנולוגי החשוב ביותר לדור הצעיר. בראש הצוות עומד מהנדס תוכנה עם
+            ניסיון עשיר בתעשייה ויותר מ-3 שנות הדרכה מוצלחות לתלמידים מכל
+            הגילאים והרמות.
+            <br />
+            <br />
+            אנחנו נלווה אתכם בעבודות כיתה, פרויקטים, מבחנים – וגם נעניק לכם את
+            הכלים לפיתוח חשיבה תכנותית יצירתית ומקצועית.
+            <br />
+            אז למה אתם מחכים? תשאירו פרטים ונחזור אליכם!
+            <br />
+            העתיד מתחיל כאן. 🚀
+          </div>
         </ItemLayout>
 
-        <ItemLayout
-          className={" col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
-        >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            30+ <sub className="font-semibold text-base">students</sub>
-          </p>
-        </ItemLayout>
+        <div className="col-span-full lg:col-span-4 flex flex-wrap items-center justify-center gap-4">
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              50+ <sub className="text-[1.1rem]">שיעורים מותאמים אישית</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              30+ <sub className="text-[1.1rem]">תלמידים</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              10+ <sub className="text-[1.1rem]">טכנולוגיות</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              5+ <sub className="text-[1.1rem]">פרויקטי לימוד</sub>
+            </p>
+          </ItemLayout>
+          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
+            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+              3+ <sub className="text-[1.1rem]">שפות תכנות</sub>
+            </p>
+          </ItemLayout>
+        </div>
 
-        <ItemLayout
-          className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
-        >
-          <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            3+ <sub className="font-semibold text-base">years of tutoring</sub>
-          </p>
-        </ItemLayout>
-
-        <ItemLayout
-          className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
-        >
-          <img
-            className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=codebucks27&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="CodeBucks"
-            loading="lazy"
-          />
-        </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=codebucks27&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
-            alt="CodeBucks"
-            loading="lazy"
-          />
-        </ItemLayout>
-
-        <ItemLayout className={"col-span-full"}>
-          <img
-            className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
-            alt="CodeBucks"
-            loading="lazy"
-          />
-        </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=codebucks27&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
-            alt="CodeBucks"
-            loading="lazy"
-          />
-        </ItemLayout>
-
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <Link
-            href="https://github.com/codebucks27/Nextjs-contentlayer-blog"
-            target="_blank"
-            className="w-full"
-          >
-            <img
-              className="w-full h-auto"
-              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=codebucks27&repo=Nextjs-contentlayer-blog&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
-              alt="CodeBucks"
-              loading="lazy"
-            />
-          </Link>
+        <ItemLayout className="col-span-full row-span-2 flex justify-center items-center border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4">
+          <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-6">
+            {[
+              "java",
+              "python",
+              "ai",
+              "aiscript",
+              "cs",
+              "react",
+              "androidstudio",
+              "vscode",
+              "spring",
+              "docker",
+              "firebase",
+              "git",
+              "github",
+              "linux",
+              "mongodb",
+              "postgres",
+              "pug",
+            ].map((icon, index) => (
+              <img
+                key={index}
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+                src={`https://skillicons.dev/icons?i=${icon}`}
+                alt={icon}
+                loading="lazy"
+              />
+            ))}
+          </div>
         </ItemLayout>
       </div>
     </section>

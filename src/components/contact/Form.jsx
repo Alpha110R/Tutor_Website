@@ -29,53 +29,42 @@ export default function Form() {
   } = useForm();
 
   const sendEmail = (params) => {
-    const toastId = toast.loading("Sending your message, please wait...");
+    const toastId = toast.loading("שולחים את ההודעה שלכם...", {
+      style: { direction: "rtl", textAlign: "right" },
+    });
 
-    toast.info(
-      "Form submissions are demo-only here. Please checkout the final code repo to enable it. If you want to connect you can reach out to me via codebucks27@gmail.com.",
-      {
-        id: toastId,
-      }
-    );
-
-    // comment out the above toast.info and uncomment the below code to enable emailjs
-
-    // emailjs
-    //   .send(
-    //     process.env.NEXT_PUBLIC_SERVICE_ID,
-    //     process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    //     params,
-    //     {
-    //       publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-    //       limitRate: {
-    //         throttle: 5000, // you can not send more then 1 email per 5 seconds
-    //       },
-    //     }
-    //   )
-    //   .then(
-    //     () => {
-    //       toast.success(
-    //         "I have received your message, I will get back to you soon!",
-    //         {
-    //           id: toastId,
-    //         }
-    //       );
-    //     },
-    //     (error) => {
-    //       // console.log("FAILED...", error.text);
-    //       toast.error(
-    //         "There was an error sending your message, please try again later!",
-    //         {
-    //           id: toastId,
-    //         }
-    //       );
-    //     }
-    //   );
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        params,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+          limitRate: {
+            throttle: 10000, // you can not send more then 1 email per 5 seconds
+          },
+        }
+      )
+      .then(
+        () => {
+          toast.success("קבלנו את ההודעה שלכם, נחזור אליכם בהקדם!", {
+            id: toastId,
+            style: { direction: "rtl", textAlign: "right" },
+          });
+        },
+        (error) => {
+          // console.log("FAILED...", error.text);
+          toast.error("הייתה תקלה בשליחת הודעה, נשמח שתתקשרו", {
+            id: toastId,
+            style: { direction: "rtl", textAlign: "right" },
+          });
+        }
+      );
   };
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "CodeBucks",
+      to_name: "Mage",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
@@ -92,20 +81,21 @@ export default function Form() {
         initial="hidden"
         animate="show"
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-md w-full flex flex-col items-center justify-center space-y-4"
+        className="max-w-lg w-full flex flex-col items-center justify-center space-y-6"
+        dir="rtl"
       >
         <motion.input
           variants={item}
           type="text"
-          placeholder="name"
+          placeholder="שם מלא"
           {...register("name", {
-            required: "This field is required!",
+            required: "שדה זה הוא חובה!",
             minLength: {
               value: 3,
-              message: "Name should be atleast 3 characters long.",
+              message: "השם צריך להכיל לפחות 3 תווים.",
             },
           })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
         />
         {errors.name && (
           <span className="inline-block self-start text-accent">
@@ -115,9 +105,9 @@ export default function Form() {
         <motion.input
           variants={item}
           type="email"
-          placeholder="email"
-          {...register("email", { required: "This field is required!" })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+          placeholder="דואר אלקטרוני"
+          {...register("email", { required: "שדה זה הוא חובה!" })}
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
         />
         {errors.email && (
           <span className="inline-block self-start text-accent">
@@ -126,32 +116,28 @@ export default function Form() {
         )}
         <motion.textarea
           variants={item}
-          placeholder="message"
+          placeholder="הודעה"
           {...register("message", {
-            required: "This field is required!",
             maxLength: {
-              value: 500,
-              message: "Message should be less than 500 characters",
+              value: 100,
+              message: "ההודעה צריכה להיות קצרה מ-100 תווים.",
             },
             minLength: {
-              value: 50,
-              message: "Message should be more than 50 characters",
+              value: 5,
+              message: "ההודעה צריכה להכיל יותר מ-5 תווים.",
             },
           })}
-          className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
         />
         {errors.message && (
           <span className="inline-block self-start text-accent">
             {errors.message.message}
           </span>
         )}
-
         <motion.input
           variants={item}
-          value="Cast your message!"
-          className="px-10 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
-      hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
-      "
+          value="אשמח לקבוע שיעור"
+          className="px-12 py-5 text-lg font-semibold rounded-lg shadow-lg bg-background border border-accent/30 border-solid hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 cursor-pointer capitalize text-right"
           type="submit"
         />
       </motion.form>
