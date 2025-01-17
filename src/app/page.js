@@ -3,6 +3,7 @@ import bg from "../../public/background/home-background.png";
 import RenderModel from "@/components/RenderModel";
 import About from "@/components/about";
 import Form from "@/components/contact/Form";
+import { Analytics } from "@vercel/analytics/react";
 
 import dynamic from "next/dynamic";
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
@@ -22,7 +23,7 @@ export default function Home() {
         alt="Coding Wizards School page background image"
         className="-z-50 fixed w-full h-full object-cover object-center opacity-80"
       />
-
+      <Analytics />
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-5">
         <RenderModel>
           <HatModel />
