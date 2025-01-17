@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../public/background/home-background.png";
+import bg from "../../public/background/home-background.webp";
 import RenderModel from "@/components/RenderModel";
 import About from "@/components/about";
 import Form from "@/components/contact/Form";
@@ -21,7 +21,7 @@ export default function Home() {
         priority
         sizes="100vw"
         alt="Coding Wizards School page background image"
-        className="-z-50 fixed w-full h-full object-cover object-center opacity-80"
+        className="-z-50 fixed w-full h-full object-cover object-center opacity-60"
       />
       <Analytics />
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-5">
