@@ -19,7 +19,7 @@ export default function Home() {
         src={bg}
         priority
         sizes="100vw"
-        alt="Wizards Coding School page background image"
+        alt="Coding Wizards School page background image"
         className="-z-50 fixed w-full h-full object-cover object-center opacity-80"
       />
 
@@ -32,7 +32,7 @@ export default function Home() {
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
           <h2 className="font-bold text-3xl xs:text-5xl sm:text-6xl lg:text-7xl text-accent">
-            Wizards Coding School
+            Coding Wizards School
           </h2>
         </div>
       </div>

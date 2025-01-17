@@ -10,11 +10,11 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: "Wizards Coding School",
-    default: "Wizards Coding School",
+    template: "Coding Wizards School",
+    default: "Coding Wizards School",
   },
   description:
-    "Wizards Coding School – Learn to Code, Cast Your Spells in Tech!",
+    "Coding Wizards School – Learn to Code, Cast Your Spells in Tech!",
 };
 
 export default function RootLayout({ children }) {
