@@ -49,7 +49,7 @@ export default function Home() {
                 <Form />
               </div>
               <h5 className="text-2xl font-bold text-center text-yellow-300 mt-10">
-                יכולים גם להתקשר: 0540000000
+                {/* יכולים גם להתקשר: 0540000000 */}
               </h5>
             </div>
           </div>
