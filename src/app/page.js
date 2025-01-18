@@ -4,7 +4,7 @@ import bg from "../../public/background/home-background.webp";
 import { Analytics } from "@vercel/analytics/react";
 
 // Dynamic imports for components to reduce initial JavaScript
-const About = dynamic(() => import("@/components/About"), { ssr: true });
+const About = dynamic(() => import("@/components/about"), { ssr: true });
 const Form = dynamic(() => import("@/components/contact/Form"), { ssr: false });
 const RenderModel = dynamic(() => import("@/components/models/RenderModel"), {
   ssr: false,
