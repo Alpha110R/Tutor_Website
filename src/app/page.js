@@ -19,7 +19,6 @@ const HatModel = dynamic(() => import("@/components/models/HatModel"), {
 export default function Home() {
   return (
     <>
-      {/* Preloaded and responsive background image */}
       <Image
         src={bg}
         priority
@@ -29,29 +28,20 @@ export default function Home() {
         loading="eager"
       />
 
-      {/* Above-the-Fold Content */}
-      <div
-        className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-5"
-        role="main"
-      >
-        <RenderModel>
-          <HatModel />
-        </RenderModel>
-      </div>
-
-      {/* Hero Section */}
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
-        <div
-          className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2"
-          role="banner"
-        >
-          <h1 className="font-bold text-3xl xs:text-5xl sm:text-6xl lg:text-7xl text-accent">
+        <div className="absolute top-[20%] text-center">
+          <h1 className="font-bold text-accent text-3xl xs:text-5xl sm:text-6xl lg:text-7xl">
             Coding Wizards School
           </h1>
         </div>
+
+        <div className="absolute bottom-0 w-full h-3/4 flex justify-center">
+          <RenderModel>
+            <Wizard />
+          </RenderModel>
+        </div>
       </div>
 
-      {/* Lazy-Loaded Below-the-Fold Content */}
       <div className="flex min-h-screen flex-col items-center justify-between relative">
         <div className="w-full h-screen">
           <About />
@@ -65,14 +55,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Optimized heavy 3D model rendering */}
-          <RenderModel>
-            <Wizard />
-          </RenderModel>
         </div>
       </div>
 
-      {/* Deferred Analytics */}
       <Analytics />
     </>
   );

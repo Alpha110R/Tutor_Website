@@ -53,7 +53,6 @@ export default function Form() {
           });
         },
         (error) => {
-          // console.log("FAILED...", error.text);
           toast.error("הייתה תקלה בשליחת הודעה, נשמח שתתקשרו", {
             id: toastId,
             style: { direction: "rtl", textAlign: "right" },
