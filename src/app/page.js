@@ -30,10 +30,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full h-3/4 flex justify-center">
+      <div className="absolute bottom-0 w-full h-[80%] flex flex-col items-center">
         <RenderModel>
           <Wizard />
         </RenderModel>
+        <div class="animated-arrow mb-10">
+          <span class="arrow"></span>
+        </div>
       </div>
 
       <div className="section-wrapper">
