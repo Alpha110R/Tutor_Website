@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full h-[80%]">
+      <div className="absolute bottom-0 w-full h-[90%]">
         <RenderModel>
           <Wizard />
         </RenderModel>
