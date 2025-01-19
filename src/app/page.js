@@ -3,17 +3,13 @@ import dynamic from "next/dynamic";
 import bg from "../../public/background/home-background.webp";
 import { Analytics } from "@vercel/analytics/react";
 
-// Dynamic imports for components to reduce initial JavaScript
-const About = dynamic(() => import("@/components/about"), { ssr: true });
+const About = dynamic(() => import("@/components/about"), { ssr: false });
 const Form = dynamic(() => import("@/components/contact/Form"), { ssr: false });
 const RenderModel = dynamic(() => import("@/components/models/RenderModel"), {
   ssr: false,
 });
 const Wizard = dynamic(() => import("@/components/models/Wizard"), {
-  ssr: false,
-});
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
-  ssr: false,
+  ssr: true,
 });
 
 export default function Home() {
