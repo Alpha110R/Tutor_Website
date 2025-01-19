@@ -34,9 +34,9 @@ export default function Home() {
         <RenderModel>
           <Wizard />
         </RenderModel>
-        <div class="animated-arrow mb-10">
-          <span class="arrow"></span>
-        </div>
+      </div>
+      <div class="animated-arrow absolute bottom-0  w-full flex items-center mb-10">
+        <span class="arrow"></span>
       </div>
 
       <div className="section-wrapper">
