@@ -2,7 +2,6 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import bg from "../../public/background/home-background.webp";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const About = dynamic(() => import("@/components/about"), { ssr: false });
 const Form = dynamic(() => import("@/components/contact/Form"), { ssr: false });
@@ -53,7 +52,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <SpeedInsights />
       <Analytics />
     </>
   );
