@@ -29,7 +29,7 @@
 
   @media (min-width: 1024px) {
     .title {
-      font-size: 4.5rem; /* Tailwind's text-7xl */
+      font-size: 4rem; /* Tailwind's text-7xl */
       line-height: 1.2;
     }
   }
