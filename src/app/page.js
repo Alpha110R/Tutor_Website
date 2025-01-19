@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full h-[80%] flex flex-col items-center">
+      <div className="absolute bottom-0 w-full h-[80%]">
         <RenderModel>
           <Wizard />
         </RenderModel>
