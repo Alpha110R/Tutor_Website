@@ -63,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem; /* Tailwind's py-20 */
+    padding-top: 1rem;
     padding-bottom: 5rem;
   }
 
@@ -90,7 +90,6 @@
   .contact-phone-title {
     font-size: 1.3rem;
     color: rgb(var(--highlight));
-    margin-top: 2rem;
     text-align: center;
   }
 

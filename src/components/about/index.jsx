@@ -60,31 +60,30 @@ const AboutDetails = () => {
         </ItemLayout>
 
         <div className="col-span-full lg:col-span-4 flex flex-wrap items-center justify-center gap-4">
-          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              50+ <sub className="text-[1.1rem]">שיעורים מותאמים אישית</sub>
-            </p>
-          </ItemLayout>
-          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              30+ <sub className="text-[1.1rem]">תלמידים</sub>
-            </p>
-          </ItemLayout>
-          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              10+ <sub className="text-[1.1rem]">טכנולוגיות</sub>
-            </p>
-          </ItemLayout>
-          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              5+ <sub className="text-[1.1rem]">פרויקטי לימוד</sub>
-            </p>
-          </ItemLayout>
-          <ItemLayout className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4">
-            <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-              3+ <sub className="text-[1.1rem]">שפות תכנות</sub>
-            </p>
-          </ItemLayout>
+          {[
+            { value: "10+", sub: "טכנולוגיות" },
+            { value: "5+", sub: "פרויקטי לימוד" },
+            { value: "3+", sub: "שפות תכנות" },
+          ].map((item, index) => (
+            <ItemLayout
+              key={index}
+              className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4"
+            >
+              <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
+                {item.value} <sub className="text-[1.1rem]">{item.sub}</sub>
+              </p>
+            </ItemLayout>
+          ))}
+          {["שיעורים פרטיים", "שיעורים קבוצתיים", "מתאים לכל הרמות"].map(
+            (text, index) => (
+              <ItemLayout
+                key={index}
+                className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4"
+              >
+                <p className="font-semibold text-2xl text-yellow-300">{text}</p>
+              </ItemLayout>
+            )
+          )}
         </div>
 
         <ItemLayout className="col-span-full row-span-2 flex justify-center items-center border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4">

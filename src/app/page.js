@@ -48,9 +48,8 @@ export default function Home() {
               <div className="w-full flex justify-center">
                 <Form />
               </div>
-              <h4 className="contact-phone-title">
-                יכולים גם להתקשר: 054-819-2255
-              </h4>
+              <h4 className="contact-phone-title mt-8">יכולים גם להתקשר</h4>
+              <h4 className="contact-phone-title">054-819-2255</h4>
             </div>
           </div>
         </div>
