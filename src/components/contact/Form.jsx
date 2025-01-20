@@ -89,6 +89,10 @@ export default function Form() {
           placeholder="שם מלא"
           {...register("name", {
             required: "שדה זה הוא חובה!",
+            maxLength: {
+              value: 20,
+              message: "שם ארוך מדי, נשמח לקיצור",
+            },
             minLength: {
               value: 3,
               message: "השם צריך להכיל לפחות 3 תווים.",
@@ -113,6 +117,25 @@ export default function Form() {
             {errors.email.message}
           </span>
         )}
+        <motion.input
+          variants={item}
+          type="tel"
+          placeholder="מספר טלפון"
+          {...register("phone", {
+            required: "שדה זה הוא חובה!",
+            pattern: {
+              value: /^[0-9]{10}$/,
+              message: "יש להזין מספר טלפון תקין (10 ספרות).",
+            },
+          })}
+          className="w-full p-4 text-lg rounded-lg shadow-lg text-foreground focus:outline-none focus:ring-4 focus:ring-accent/50 custom-bg text-right"
+        />
+        {errors.phone && (
+          <span className="inline-block self-start text-accent">
+            {errors.phone.message}
+          </span>
+        )}
+
         <motion.textarea
           variants={item}
           placeholder="הודעה"
