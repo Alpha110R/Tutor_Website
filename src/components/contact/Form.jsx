@@ -66,6 +66,7 @@ export default function Form() {
       to_name: "Mage",
       from_name: data.name,
       reply_to: data.email,
+      phone: data.phone,
       message: data.message,
     };
 

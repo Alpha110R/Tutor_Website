@@ -44,10 +44,13 @@ export default function Home() {
           <About />
           <div className="content-wrapper">
             <div className="content-container">
-              <h2 className="contact-title">צרו קשר</h2>
+              <h2 className="contact-form-title">צרו קשר</h2>
               <div className="w-full flex justify-center">
                 <Form />
               </div>
+              <h4 className="contact-phone-title">
+                יכולים גם להתקשר: 054-819-2255
+              </h4>
             </div>
           </div>
         </div>

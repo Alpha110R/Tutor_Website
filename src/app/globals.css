@@ -79,11 +79,18 @@
   }
 
   /* Title styles for the contact section */
-  .contact-title {
+  .contact-form-title {
     font-size: 2.25rem; /* Tailwind's text-4xl */
     font-weight: bold;
     color: rgb(var(--highlight)); /* Yellow highlight */
     margin-bottom: 2.5rem; /* Tailwind's mb-10 */
+    text-align: center;
+  }
+
+  .contact-phone-title {
+    font-size: 1.3rem;
+    color: rgb(var(--highlight));
+    margin-top: 2rem;
     text-align: center;
   }
 
