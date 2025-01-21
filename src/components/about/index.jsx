@@ -11,11 +11,12 @@ const AboutDetails = () => {
             col-span-full lg:col-span-8 row-span-2 flex-col items-start border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4
           `}
         >
-          <h2 className="text-3xl md:text-4xl text-right w-full capitalize font-bold mb-4 text-yellow-300">
-            בואו ללמוד לתכנת ולהכיר את עולם ה- AI
+          <h2 className="text-3xl md:text-4xl text-center w-full font-bold mb-4 text-yellow-300">
+            בואו ללמוד תכנות ולהכיר את עולם ה- AI
           </h2>
           <div className="font-light text-[1.3rem] text-right leading-relaxed text-white">
-            רוצים ללמוד תכנות ולהכיר את עולם הבינה המלאכותית? הגעתם למקום הנכון!
+            רוצים ללמוד תכנות במדעי המחשב ולהכיר את עולם הבינה המלאכותית? הגעתם
+            למקום הנכון!
             <br />
             אנחנו כאן כדי לעזור לכם להתמקצע, להעמיק ולהצליח. בין אם אתם{" "}
             <u>תלמידי יסודי, חטיבה, תיכון או סטודנטים</u> – אנחנו מציעים שיעורים
@@ -29,15 +30,16 @@ const AboutDetails = () => {
               <br />
               💻 #C
               <br />
-              💻 OOP
-              <br />
               💻 Android
+              <br />
+              💻 Scratch
               <br />
               🤖 בינה מלאכותית (AI)
               <br />
               💡 חשיבה תכנותית
               <br />
               💡 חשיבה יצירתית
+              <br />✨ מדעי המחשב
             </div>
             <br />
             אנחנו מתאימים את השיעורים שלנו לרמות ולגילאים השונים, כך שכל תלמיד
