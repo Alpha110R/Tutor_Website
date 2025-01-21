@@ -31,6 +31,8 @@ const AboutDetails = () => {
               <br />
               💻 OOP
               <br />
+              💻 Android
+              <br />
               🤖 בינה מלאכותית (AI)
               <br />
               💡 חשיבה תכנותית

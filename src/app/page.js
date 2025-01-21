@@ -2,6 +2,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import bg from "../../public/background/home-background.webp";
 import { Analytics } from "@vercel/analytics/react";
+import Head from "next/head";
 
 const About = dynamic(() => import("@/components/about"), { ssr: false });
 const Form = dynamic(() => import("@/components/contact/Form"), { ssr: false });
@@ -15,6 +16,31 @@ const Wizard = dynamic(() => import("@/components/models/Wizard"), {
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Coding Wizards School | לימוד תכנות לילדים ונוער</title>
+        <meta
+          name="description"
+          content="לימוד תכנות לילדים ונוער. שיעורים פרטיים וקבוצתיים"
+        />
+        <meta name="author" content="Coding Wizards School" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+          property="og:title"
+          content="Coding Wizards School | לימוד תכנות לילדים ונוער"
+        />
+        <meta
+          property="og:description"
+          content="לימוד תכנות לילדים ונוער. שיעורים פרטיים וקבוצתיים"
+        />
+        <meta
+          property="og:url"
+          content="https://www.codingwizardsschool.com/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="he_IL" />
+        <link rel="canonical" href="https://www.codingwizardsschool.com/" />
+      </Head>
       <Image
         src={bg}
         priority
