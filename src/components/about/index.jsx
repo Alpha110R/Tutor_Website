@@ -19,8 +19,8 @@ const AboutDetails = () => {
             למקום הנכון!
             <br />
             אנחנו כאן כדי לעזור לכם להתמקצע, להעמיק ולהצליח. בין אם אתם{" "}
-            <u>תלמידי יסודי, חטיבה, תיכון או סטודנטים</u> – אנחנו מציעים שיעורים
-            פרטיים וקבוצתיים במגוון נושאים מרתקים, הכוללים:
+            <u>תלמידי יסודי, חטיבה ותיכון</u> – אנחנו מציעים שיעורים פרטיים
+            וקבוצתיים במגוון נושאים מרתקים, הכוללים:
             <br />
             <br />
             <div className="text-center">
@@ -65,29 +65,20 @@ const AboutDetails = () => {
 
         <div className="col-span-full lg:col-span-4 flex flex-wrap items-center justify-center gap-4">
           {[
-            { value: "10+", sub: "טכנולוגיות" },
-            { value: "5+", sub: "פרויקטי לימוד" },
-            { value: "3+", sub: "שפות תכנות" },
-          ].map((item, index) => (
+            "שיעורים פרטיים",
+            "שיעורים קבוצתיים",
+            "תלמידי יסודי",
+            "תלמידי חטיבה",
+            "תלמידי תיכון",
+            "מתאים לכל הרמות",
+          ].map((text, index) => (
             <ItemLayout
               key={index}
               className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4"
             >
-              <p className="font-semibold text-4xl sm:text-3xl text-yellow-300">
-                {item.value} <sub className="text-[1.1rem]">{item.sub}</sub>
-              </p>
+              <p className="font-semibold text-2xl text-yellow-300">{text}</p>
             </ItemLayout>
           ))}
-          {["שיעורים פרטיים", "שיעורים קבוצתיים", "מתאים לכל הרמות"].map(
-            (text, index) => (
-              <ItemLayout
-                key={index}
-                className="flex justify-start items-center border border-yellow-500 rounded-xl p-4 bg-transparent shadow-md w-full mx-4"
-              >
-                <p className="font-semibold text-2xl text-yellow-300">{text}</p>
-              </ItemLayout>
-            )
-          )}
         </div>
 
         <ItemLayout className="col-span-full row-span-2 flex justify-center items-center border border-yellow-500 rounded-xl p-6 bg-transparent shadow-md mx-4">

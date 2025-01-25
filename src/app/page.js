@@ -71,11 +71,7 @@ export default function Home() {
           <div className="content-wrapper">
             <div className="content-container">
               <h2 className="contact-form-title">צרו קשר</h2>
-              <div className="w-full flex justify-center">
-                <Form />
-              </div>
-              <h4 className="contact-phone-title mt-8">מוזמנים גם להתקשר</h4>
-              <h4 className="contact-phone-title">054-819-2255</h4>
+              <Form />
             </div>
           </div>
         </div>
