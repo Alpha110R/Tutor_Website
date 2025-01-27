@@ -139,7 +139,7 @@ export default function Form() {
 
         <motion.textarea
           variants={item}
-          placeholder="הודעה"
+          placeholder="לאיזה כיתה אתם מתעניינים?"
           {...register("message", {
             maxLength: {
               value: 100,
